@@ -1,9 +1,12 @@
 :root {
     --mainColor: rgb(196, 222, 197);
-    --secondaryColor: #fff;
-    --borderColor:rgb(247, 202, 202);
+    --secondaryColor: #d9ceb8;
+    --thirdColor: #b24013;
+    --borderColor:rgb(225, 182, 159);
     --mainText:black;
-    --secondaryText:rgb(197, 142, 40);
+    --secondaryText:rgb(216, 168, 78);
+    --cursive: 'Great Vibes', cursive;
+
 }
 
 
@@ -20,10 +23,36 @@
 #header {
     color: var(--mainText);
     text-decoration: none;
-    font-style: italic;
-    font-family: 'Source Serif Pro', serif;
-
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
 }
 
 /*Header Styling Ends*/
 
+/*Navigation Bar Sytle Starts */
+
+.navigation {
+    border: 5px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 3em;
+    background-color: var(--thirdColor);
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--borderColor);
+    font-size: larger;
+}
+
+
+ 
