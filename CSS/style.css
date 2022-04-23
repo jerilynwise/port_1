@@ -1,0 +1,29 @@
+:root {
+    --mainColor: rgb(196, 222, 197);
+    --secondaryColor: #fff;
+    --borderColor:rgb(247, 202, 202);
+    --mainText:black;
+    --secondaryText:rgb(197, 142, 40);
+}
+
+
+/*Header Styling Starts*/
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainColor);
+    border: 1px dashed var(--borderColor);
+    margin: 0 auto;
+}
+
+#header {
+    color: var(--mainText);
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+/*Header Styling Ends*/
+
