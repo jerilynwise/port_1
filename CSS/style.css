@@ -6,8 +6,7 @@
     --mainText:black;
     --secondaryText:rgb(216, 168, 78);
     --cursive: 'Great Vibes', cursive;
-    --mainText: 
-
+    --mainText: 'Raleway', sans-serif;
 }
 
 
@@ -131,7 +130,12 @@
 
 .post-wrapper {
     border: 10px dashed darkgoldenrod;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'post-1 post-1'
+    'small-post'
+    ;
     justify-content:space-evenly;
     background-color: var(--borderColor);
 
@@ -139,40 +143,30 @@
 
 
 .post-1 {
-    border: 10px dashed darksalmon;
-    display: flex;
-    height: 330px;
-    width: 330px;
-    position: relative;
-    
+    border: 10px solid var(--thirdColor);
+    background-color: var(--mainColor);  
 }
 
 .lg-thumb {
     display: block;
     width: 100%;
-    height: 180px;
-    object-fit:cover;
-
-}
-
-.text-wrap {
-    border: 3px dashed darkcyan;
+    height: 200px;
+    object-fit:fill;
 
 }
 
 .post-preview {
-    border: 3px dashed darkred;
-    padding: 15px 15px 55px 55px;
-    background-color: var(--secondaryColor);
     font-family: var(--mainText);
+    display: flex;
+    justify-content: center;
 
 }
 
 .small-wrap {
     border: 2px dashed darkmagenta;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .small-post {
