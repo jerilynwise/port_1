@@ -2,19 +2,18 @@
     --mainColor: rgb(196, 222, 197);
     --secondaryColor: #e0d9cb;
     --thirdColor: #b24013;
-    --borderColor:rgb(225, 184, 163);
+    --borderColor:rgb(219, 196, 184);
     --mainText:black;
     --secondaryText:rgb(216, 168, 78);
     --cursive: 'Great Vibes', cursive;
-    --shadow: box-shadow: -28px 15px 17px 9px rgba(0,0,0,0.41);
-                -webkit-box-shadow: -28px 15px 17px 9px rgba(0,0,0,0.41);
-                -moz-box-shadow: -28px 15px 17px 9px rgba(0,0,0,0.41);
+    --mainText: 
 
 }
 
 
-/*Header Styling Starts*/
 
+
+/*Header Styling Starts*/
 .header-box {
     display: flex;
     justify-content: center;
@@ -61,7 +60,7 @@
 /*Side by Side of Profile Pic and About Me */
 
 .wrapper {
-   background-color: var(--secondaryColor);
+   background-color: var(--borderColor);
    border: 3px;
    border-radius: 5px 5px 0 0;
    display: flex;
@@ -102,7 +101,7 @@
 }
 
 .preview p {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--mainText)
     font-size: 15px;
 }
 
@@ -112,10 +111,73 @@
     font-weight:900;
 }
 
+
 /*Find out how to add correct hover */
 .preview a :hover {
     padding: 15px;
     color: rgb(3, 67, 3);
 }
 
+/*Fun Projects Style Starts */
+
+.project-header{
+    background-color: var(--thirdColor);
+    font-family: var(--cursive);
+    font-size: 50px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.post-wrapper {
+    border: 10px dashed darkgoldenrod;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: var(--borderColor);
+
+}
+
+
+.post-1 {
+    border: 10px dashed darksalmon;
+    display: flex;
+    height: 330px;
+    width: 330px;
+    position: relative;
+    
+}
+
+.lg-thumb {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit:cover;
+
+}
+
+.text-wrap {
+    border: 3px dashed darkcyan;
+
+}
+
+.post-preview {
+    border: 3px dashed darkred;
+    padding: 15px 15px 55px 55px;
+    background-color: var(--secondaryColor);
+    font-family: var(--mainText);
+
+}
+
+.small-wrap {
+    border: 2px dashed darkmagenta;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.small-post {
+    border: 2px dashed darkgreen;
+    display: flex;
+    align-content: center;
+}
  
