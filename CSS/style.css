@@ -1,11 +1,14 @@
 :root {
     --mainColor: rgb(196, 222, 197);
-    --secondaryColor: #d9ceb8;
+    --secondaryColor: #e0d9cb;
     --thirdColor: #b24013;
-    --borderColor:rgb(225, 182, 159);
+    --borderColor:rgb(225, 184, 163);
     --mainText:black;
     --secondaryText:rgb(216, 168, 78);
     --cursive: 'Great Vibes', cursive;
+    --shadow: box-shadow: -28px 15px 17px 9px rgba(0,0,0,0.41);
+                -webkit-box-shadow: -28px 15px 17px 9px rgba(0,0,0,0.41);
+                -moz-box-shadow: -28px 15px 17px 9px rgba(0,0,0,0.41);
 
 }
 
@@ -18,6 +21,7 @@
     background-color: var(--mainColor);
     border: 1px dashed var(--borderColor);
     margin: 0 auto;
+    border-radius: 5px 5px 0 0;
 }
 
 #header {
@@ -54,5 +58,69 @@
     font-size: larger;
 }
 
+/*Side by Side of Profile Pic and About Me */
+
+.wrapper {
+   background-color: var(--secondaryColor);
+   border: 3px;
+   border-radius: 5px 5px 0 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+#profile-pic {
+    display: inline-block;
+    padding: 5px;
+    margin: 30px;
+    height: 330px;
+    width: 330px;
+    object-fit: cover;
+    border: 2px solid var(--thirdColor);
+    border-radius: 50%;
+}
+
+.this-is-me {
+    border: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.preview {
+    width: 300px;
+    border: 10px solid var(--thirdColor);
+    margin: 10px;
+    background-color: var(--mainColor);
+    padding: 15px;
+    position: relative;
+    text-align: center;
+ 
+}
+
+.preview h3 {
+    font-family: var(--cursive);
+    font-size: 50px;
+    text-align: center;
+}
+
+.preview p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.preview a {
+    text-decoration: none;
+    color: var(--thirdColor);
+    font-weight:900;
+}
+
+/*Find out how to add correct hover */
+.preview a :hover {
+    padding: 15px;
+    color: rgb(3, 67, 3);
+}
 
  
