@@ -122,7 +122,7 @@
 .project-header{
     background-color: var(--thirdColor);
     font-family: var(--cursive);
-    font-size: 50px;
+    font-size: 30px;
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: center;
@@ -185,4 +185,24 @@
     justify-content: center;
     font-family: var(--mainText);
 }
+
+.lets-chat {
+    border: 6px solid var(--thirdColor);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
+
+    
+}
+
+.chat-header{
+    background-color: var(--thirdColor);
+    font-family: var(--cursive);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
  
