@@ -129,7 +129,7 @@
 }
 
 .post-wrapper {
-    border: 10px dashed darkgoldenrod;
+    border: 10px solid var(--borderColor);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -163,15 +163,26 @@
 }
 
 .small-wrap {
-    border: 2px dashed darkmagenta;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+
 
 }
 
 .small-post {
-    border: 2px dashed darkgreen;
+    border: 10px solid var(--thirdColor);
+    background-color: var(--mainColor);
+
+}
+
+.sm-thumb {
+    width: 100%;
+    object-fit: fill;
+}
+
+.sm-preview {
     display: flex;
-    align-content: center;
+    justify-content: center;
+    font-family: var(--mainText);
 }
  
