@@ -138,13 +138,16 @@
     ;
     justify-content:space-evenly;
     background-color: var(--borderColor);
+    padding: 50px;
+    gap: 15px;
 
 }
 
 
 .post-1 {
-    border: 10px solid var(--thirdColor);
-    background-color: var(--mainColor);  
+    border: 3px solid var(--thirdColor);
+    background-color: var(--mainColor);
+    padding: 10px;  
 }
 
 .lg-thumb {
@@ -165,14 +168,14 @@
 .small-wrap {
     display: flex;
     flex-direction: row;
-
+    gap: 15px;
 
 }
 
 .small-post {
-    border: 10px solid var(--thirdColor);
+    border: 3px solid var(--thirdColor);
     background-color: var(--mainColor);
-
+    padding: 15px;
 }
 
 .sm-thumb {
@@ -187,7 +190,6 @@
 }
 
 .lets-chat {
-    border: 6px solid var(--thirdColor);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -198,6 +200,7 @@
 
 .chat-header{
     background-color: var(--thirdColor);
+    border-radius: 5px 5px 0 0;
     font-family: var(--cursive);
     font-size: 30px;
     display: flex;
@@ -205,4 +208,23 @@
     align-items: flex-start;
 }
 
- 
+.lets-chat address {
+    padding: 50px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--borderColor);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--mainText);
+    font-weight: 900;
+}
+
+.lets-chat a {
+    text-decoration: none;
+    font-family: var(--mainText);
+    color: #b24013;
+    font-size: 20px;
+    font-weight: 900;
+}
+
