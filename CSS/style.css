@@ -19,7 +19,6 @@
     background-color: var(--mainColor);
     border: 1px dashed var(--borderColor);
     margin: 0 auto;
-    border-radius: 5px 5px 0 0;
 }
 
 #header {
@@ -35,7 +34,6 @@
 
 .navigation {
     border: 5px;
-    border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -61,7 +59,6 @@
 .wrapper {
    background-color: var(--borderColor);
    border: 3px;
-   border-radius: 5px 5px 0 0;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
@@ -79,29 +76,31 @@
 .this-is-me {
     display: flex;
     align-items: center;
-
 }
 
 .preview {
+
     height: 330px;
     width: 330px;
     border: 10px solid var(--thirdColor);
     margin: 30px;
     background-color: var(--mainColor);
-    position: relative;
     text-align: center;
- 
 }
 
 .preview h3 {
+
     font-family: var(--cursive);
     font-size: 50px;
     text-align: center;
 }
 
 .preview p {
-    font-family: var(--mainText)
+
+    font-family: var(--mainText);
     font-size: 15px;
+    margin: 20px;
+
 }
 
 .preview a {
@@ -122,8 +121,7 @@
 .project-header{
     background-color: var(--thirdColor);
     font-family: var(--cursive);
-    font-size: 30px;
-    border-radius: 5px 5px 0 0;
+    font-size: 50px;
     display: flex;
     justify-content: center;
 }
@@ -145,7 +143,7 @@
 
 
 .post-1 {
-    border: 3px solid var(--thirdColor);
+    border: 10px solid var(--thirdColor);
     background-color: var(--mainColor);
     padding: 10px;  
 }
@@ -173,7 +171,7 @@
 }
 
 .small-post {
-    border: 3px solid var(--thirdColor);
+    border: 10px solid var(--thirdColor);
     background-color: var(--mainColor);
     padding: 15px;
 }
@@ -193,16 +191,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border-radius: 5px 5px 0 0;
 
     
 }
 
 .chat-header{
     background-color: var(--thirdColor);
-    border-radius: 5px 5px 0 0;
     font-family: var(--cursive);
-    font-size: 30px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -210,7 +206,6 @@
 
 .lets-chat address {
     padding: 50px;
-    border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: center;
     background-color: var(--borderColor);
@@ -228,3 +223,17 @@
     font-weight: 900;
 }
 
+/*cellphone*/
+@media screen and (max-width: 575px) {
+    
+}
+
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 980px) {
+    
+}
