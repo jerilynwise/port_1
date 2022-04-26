@@ -9,16 +9,24 @@
     --mainText: 'Raleway', sans-serif;
 }
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 /*Header Styling Starts*/
 .header-box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    top: 0;
     background-color: var(--mainColor);
     border: 1px dashed var(--borderColor);
     margin: 0 auto;
+    background-position: 80%;
 }
 
 #header {
@@ -42,16 +50,27 @@
 }
 
 .nav li {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin-right: 5px;
     margin-left: 5px;
     text-decoration: none;
 }
 
 .nav a {
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
     color: var(--borderColor);
     font-size: larger;
+}
+
+nav li a:hover {
+    background: var(--secondaryText);
+    color: black;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /*Side by Side of Profile Pic and About Me */
@@ -62,6 +81,7 @@
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   flex-wrap: wrap;
 }
 
 #profile-pic {
@@ -76,6 +96,7 @@
 .this-is-me {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .preview {
@@ -111,10 +132,17 @@
 
 
 /*Find out how to add correct hover */
-.preview a :hover {
-    padding: 15px;
-    color: rgb(3, 67, 3);
+download a:hover {
+    background: var(--secondaryText);
+    color: black;
+    border-radius: 15px;
+    text-shadow: none;
+
 }
+
+
+
+
 
 /*Fun Projects Style Starts */
 
@@ -124,6 +152,7 @@
     font-size: 50px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .post-wrapper {
@@ -138,6 +167,7 @@
     background-color: var(--borderColor);
     padding: 50px;
     gap: 15px;
+    flex-wrap: wrap;
 
 }
 
@@ -145,7 +175,8 @@
 .post-1 {
     border: 10px solid var(--thirdColor);
     background-color: var(--mainColor);
-    padding: 10px;  
+    padding: 10px; 
+
 }
 
 .lg-thumb {
@@ -156,10 +187,20 @@
 
 }
 
+
+/* This isn't working correctly- I want the whole picture to change color */
+.post-wrapper a:hover {
+    background: var(--secondaryText);
+    color: black;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 .post-preview {
     font-family: var(--mainText);
     display: flex;
     justify-content: center;
+
 
 }
 
@@ -225,7 +266,6 @@
 
 /*cellphone*/
 @media screen and (max-width: 575px) {
-    
 }
 
 
