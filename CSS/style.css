@@ -111,7 +111,7 @@ nav li a:hover {
     margin: 30px;
     background-color: var(--mainColor);
     text-align: center;
-    padding: 15px;
+    padding: 30px;
 }
 
 .preview h3 {
@@ -135,16 +135,10 @@ nav li a:hover {
     font-weight:900;
 }
 
-
-download a:hover {
-    background: var(--secondaryText);
-    color: black;
-    border-radius: 15px;
-    text-shadow: none;
-
+.preview a :hover {
+    background-color: var(--secondaryText);
+    border: 50px;
 }
-
-
 
 
 
@@ -170,6 +164,12 @@ download a:hover {
 }
 
 
+.small-wrap a :hover {
+    background-color: var(--secondaryText);
+    border: 50px;
+}
+
+
 .post-1 {
     border: 10px solid var(--thirdColor);
     background-color: var(--mainColor);
@@ -184,13 +184,6 @@ download a:hover {
 
 }
 
-
-.post-wrapper a:hover {
-    background: var(--secondaryText);
-    color: black;
-    border-radius: 15px;
-    text-shadow: none;
-}
 
 .post-preview {
     border: 5px;
@@ -231,6 +224,9 @@ download a:hover {
 }
 
 
+
+
+/*Let's Chat Section Starts*/
 .lets-chat {
     display: flex;
     justify-content: space-between;
