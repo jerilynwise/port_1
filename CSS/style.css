@@ -1,3 +1,4 @@
+/*Coloring for the website*/
 :root {
     --mainColor: rgb(196, 222, 197);
     --secondaryColor: #e0d9cb;
@@ -9,12 +10,15 @@
     --mainText: 'Raleway', sans-serif;
 }
 
+
+
+/*Styling for the entire website starts*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+/*Styling for the entire website ends*/
 
 /*Header Styling Starts*/
 .header-box {
@@ -40,7 +44,6 @@
 /*Header Styling Ends*/
 
 /*Navigation Bar Sytle Starts */
-
 .navigation {
     border: 5px;
     display: flex;
@@ -76,9 +79,9 @@ nav li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+/*Navigation Bar Sytle Ends */
 
 /*Side by Side of Profile Pic and About Me */
-
 .wrapper {
    background-color: var(--borderColor);
    border: 3px;
@@ -115,18 +118,15 @@ nav li a:hover {
 }
 
 .preview h3 {
-
     font-family: var(--cursive);
     font-size: 50px;
     text-align: center;
 }
 
 .preview p {
-
     font-family: var(--mainText);
     font-size: 15px;
     margin: 20px;
-
 }
 
 .preview a {
@@ -135,15 +135,8 @@ nav li a:hover {
     font-weight:900;
 }
 
-.preview a :hover {
-    background-color: var(--secondaryText);
-    border: 50px;
-}
-
-
 
 /*Fun Projects Style Starts */
-
 .project-header{
     background-color: var(--thirdColor);
     font-family: var(--cursive);
@@ -160,15 +153,7 @@ nav li a:hover {
     justify-content:space-evenly;
     background-color: var(--borderColor);
     padding: 50px;
-
 }
-
-
-.small-wrap a :hover {
-    background-color: var(--secondaryText);
-    border: 50px;
-}
-
 
 .post-1 {
     border: 10px solid var(--thirdColor);
@@ -181,17 +166,13 @@ nav li a:hover {
     width: 100%;
     object-fit: fill;
     max-height: 330px;
-
 }
-
 
 .post-preview {
     border: 5px;
     font-family: var(--mainText);
     display: flex;
     justify-content: center;
-
-
 }
 
 .small-wrap {
@@ -222,8 +203,7 @@ nav li a:hover {
     display: flex;
     justify-content: center;
 }
-
-
+/*Fun Projects Style Ends */
 
 
 /*Let's Chat Section Starts*/
@@ -231,8 +211,6 @@ nav li a:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-    
 }
 
 .chat-header{
@@ -263,22 +241,14 @@ nav li a:hover {
     font-size: 20px;
     font-weight: 900;
 }
+/*Let's Chat Section Starts*/
 
-/*cellphone*/
-@media screen and (max-width: 575px) {
-    .header {
-        display: flex;
-        justify-content: center;
-    }
+/*Footer Styling Starts */
+footer {
+    background-color: var(--borderColor);
+    display: flex;
+    justify-content: flex-end;
 }
+/*Footer Styling Ends*/
 
 
-
-/*tablet*/
-@media screen and (max-width: 768px) {
-    
-}
-
-@media screen and (max-width: 980px) {
-    
-}
